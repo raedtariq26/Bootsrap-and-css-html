@@ -1,69 +1,70 @@
-<!DOCTYPE  html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- this is for the people -->
-    <title> movies list </title>
     <meta charset="UTF-8">
-    <meta 
-    name=          "description"  
-    content=         "this is my movies list">
-<!-- This is comment-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final exam</title>
     <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
         body {
-        background-color: rgb(221, 9, 203);
-    
+            margin: 0%;
+
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 40px;
+            background-color: blueviolet;
+        }
+        .title{
+            font-size: 25px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            background-color: azure;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.596);
+        }
+        input {
+            font-size: 20px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        label {
+            font-size: 20px;
+        }
+        input[type=sumbit] {
+            background-color: blueviolet;
+            border: 0.1px solid black;
+        }
+        input[type=sumbit]:hover {
+            background-color: rgb(184, 22, 149);
+            cursor: pointer;
+            transition-duration: .5;
+        }
     </style>
-    <meta name="elzero" content="v1.0"
-     <link rel="stylesheet" href="CSS/movie.css"
 </head>
 <body>
-    <!--
-    img=> source
-    alt=> alternatave text    
-        -->
-    <!--
-        b => bold
-        i => italic
-        em => italic
-        mark => highlight
-        u => underline
-        del => deleted
-        ins => inserted
-        sub => subscript
-        sup => superscript
-        -->
-    <h1>movie list</h1>
- <p> This is my favourite <i>movies </i>  </p>  
- 
- 
-    
-    <p> N.1</p>       
-            
-  <img src="pic/2322237301153728.jpg" alt="movie1"/>
+  <div class="container">
+    <div class="title">
+        log in
 
-
-   
-  
-
-     <p>N.2</p>
-
-
-  <img src="pic/hush.jpg" alt="movie2"/>
-
-
-
-       
-
-  <p>N.3</p>
-
-     <img src="pic/Orphan.jpg" alt="movie3"/>
-
-
-
-
-    
-    <!-- h1-h6 -->
-    
+    </div>
+    <form action="">
+        <label for="email">email</label>
+        <input type="email" name="email" id="email">
+        <label for="password">password</label>
+        <input type="password" name="password" id="password">
+        <input type="submit" value="login">
+    </form>
+  </div>  
 </body>
-
 </html>
